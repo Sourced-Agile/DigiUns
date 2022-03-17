@@ -3,19 +3,23 @@
 
 <head>
 
-    <title>Sourced Agile Training and Simulation Framework</title>
-    <link rel="stylesheet" href="js/bootstrap-select.min.js">
-    <link rel="stylesheet" href="js/bootstrap.min.js">
+    <title>Sourced Agile Training and Simulation Framework</title>>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 
-    <script src="js/jquery-ui.js"></script>
+
     <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-select.min.js"></script>
+
     <script src="js/link.js"></script>
     <script src="js/main.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/sa-global.js"></script>
+    <script src="./app.js"></script>
 
     <link rel="stylesheet" href="fontawsome/fontawesome-5-pro-master/css/all.css">
     <link rel="stylesheet" href="style.css">
@@ -26,139 +30,380 @@
     <div class="container">
         <div class="box d-flex">
             <div class="photoContainer">
-                <img src="fontawsome/Apple-iPhone12Pro-iOS15-health-sharing-060721_carousel.jpg 1.jpg" alt="">
+                <img src="fontawsome/WhatsApp Image 2022-01-28 at 17.23.58.jpeg" alt="">
             </div>
             <div class="cartContainer">
                 <div class="cardheader">
                     <div class="cardTitle">NEWS PAGE</div>
                 </div>
                 <div class="cardBody">
-                    <div class="mb-2">
+                    <!-- body title table -->
+                    <div class="mb-2 mr-2 tableCon">
                         <table class="tableTitle">
-                        <thead>
-                            <tr>
-                                <th style="width:22px w-100">
-                                    <div class="d-flex" style="position:relative;">
-                                        <div class="tableTitle_sira dFlex text-light">
-                                            <span>1</span>
+                            <thead>
+                                <tr>
+                                    <th style="width:22px w-100">
+                                        <div class="d-flex" style="position:relative;">
+                                            <div class="tableTitle_sira dFlex text-light">
+                                                <span class="title">1</span>
+                                            </div>
+                                            <div class="tableTitle_title dFlex">
+                                                <a href="#" class="text-light"><i
+                                                        class="fal fa-ellipsis-v text-light buttontable"></i></a>
+
+                                                <div class="text-light title">Title</div>
+                                                <input type="checkbox" style="width: 10px;">
+                                            </div>
+                                            <div class="dFlex">
+                                                <button class="tablePlusIcon">
+                                                    <i class="far fa-plus"></i>
+                                                </button>
+
+                                            </div>
+
                                         </div>
-                                        <div class="tableTitle_title dFlex">
-                                            <a href="#" class="text-light"><i
-                                                    class="fal fa-ellipsis-v text-light buttontable"></i></a>
+                                    </th>
 
-                                            <div class="text-light title">Title</div>
-                                            <input type="checkbox" style="width: 10px;">
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="titleTbody">
+                                            <div class="titleTbodyCheck dFlex">
+                                                <input type="checkbox">
+                                            </div>
+                                            <div class="titleTbodyText">
+                                                is Mondatory
+                                            </div>
+
                                         </div>
-                                        <div class="tablePlusIcon dFlex">
-                                            <button class="tablePlusIcon">
-                                                <i class="far fa-plus"></i>
-                                            </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="titleTbody">
+
+                                            <div class="titleTbodyCheck dFlex">
+                                                <input type="checkbox">
+                                            </div>
+                                            <div class="titleTbodyText">
+                                                salam est ucundu bunlar sdms gedel oppalara sad asresfdfdfsd
+                                            </div>
 
                                         </div>
-
-                                    </div>
-                                </th>
-
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <div class="titleTbody">
-
-                                        <div class="titleTbodyCheck dFlex">
-                                            <input type="checkbox">
-                                        </div>
-                                        <div class="titleTbodyText">
-                                            is Mondatory
-                                        </div>
-
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class="titleTbody">
-
-                                        <div class="titleTbodyCheck dFlex">
-                                            <input type="checkbox">
-                                        </div>
-                                        <div class="titleTbodyText">
-                                            salam est ucundu bunlar sdms gedel oppalara sad asresfdfdfsd
-                                        </div>
-
-                                    </div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <div class="bgF7F7F7 d-flex justify-content-end">
-                        <input class="tableEndInp" type="text">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="bgF7F7F7 d-flex justify-content-end ">
+                            <input class="tableEndInp addInput d-none" type="text">
+                        </div>
                     </div>
-                    </div>
-                    <div>
+                    <!-- body date table -->
+                    <div class="mb-2 mr-2 tableCon">
                         <table class="tableTitle">
-                        <thead>
-                            <tr>
-                                <th style="width:22px w-100">
-                                    <div class="d-flex" style="position:relative;">
-                                        <div class="tableTitle_sira dFlex text-light">
-                                            <span>2</span>
+                            <thead>
+                                <tr>
+                                    <th style="width:22px w-100">
+                                        <div class="d-flex" style="position:relative;">
+                                            <div class="tableTitle_sira dFlex text-light">
+                                                <span class="title">2</span>
+                                            </div>
+                                            <div class="tableTitle_title dFlex">
+                                                <a href="#" class="text-light"><i
+                                                        class="fal fa-ellipsis-v text-light buttontable"></i></a>
+
+                                                <div class="text-light title">Date</div>
+                                                <input type="checkbox" style="width: 10px;">
+                                            </div>
+                                            <div class="dFlex">
+                                                <button class="tablePlusIcon">
+                                                    <i class="far fa-plus"></i>
+                                                </button>
+
+                                            </div>
+
                                         </div>
-                                        <div class="tableTitle_title dFlex">
-                                            <a href="#" class="text-light"><i
-                                                    class="fal fa-ellipsis-v text-light buttontable"></i></a>
+                                    </th>
 
-                                            <div class="text-light title">Date</div>
-                                            <input type="checkbox" style="width: 10px;">
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="titleTbody">
+
+                                            <div class="titleTbodyCheck dFlex">
+                                                <input type="checkbox">
+                                            </div>
+                                            <div class="titleTbodyText">
+                                                is Mondatory
+                                            </div>
+
                                         </div>
-                                        <div class="tablePlusIcon dFlex">
-                                            <button class="tablePlusIcon">
-                                                <i class="far fa-plus"></i>
-                                            </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="titleTbody">
+
+                                            <div class="titleTbodyCheck dFlex">
+                                                <input type="checkbox">
+                                            </div>
+                                            <div class="titleTbodyText">
+                                                salam est ucundu bunlar sdms gedel oppalara sad asresfdfdfsd
+                                            </div>
 
                                         </div>
-
-                                    </div>
-                                </th>
-
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <div class="titleTbody">
-
-                                        <div class="titleTbodyCheck dFlex">
-                                            <input type="checkbox">
-                                        </div>
-                                        <div class="titleTbodyText">
-                                            is Mondatory
-                                        </div>
-
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class="titleTbody">
-
-                                        <div class="titleTbodyCheck dFlex">
-                                            <input type="checkbox">
-                                        </div>
-                                        <div class="titleTbodyText">
-                                            salam est ucundu bunlar sdms gedel oppalara sad asresfdfdfsd
-                                        </div>
-
-                                    </div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <div class="bgF7F7F7 d-flex justify-content-end">
-                        <input class="tableEndInp" type="text">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="bgF7F7F7 d-flex justify-content-end ">
+                            <input class="tableEndInp addInput d-none" type="text">
+                        </div>
                     </div>
+                    <!-- body time table -->
+                    <div class="mb-2 mr-2 tableCon">
+                        <table class="tableTitle">
+                            <thead>
+                                <tr>
+                                    <th style="width:22px w-100">
+                                        <div class="d-flex" style="position:relative;">
+                                            <div class="tableTitle_sira dFlex text-light">
+                                                <span class="title">3</span>
+                                            </div>
+                                            <div class="tableTitle_title dFlex">
+                                                <a href="#" class="text-light"><i
+                                                        class="fal fa-ellipsis-v text-light buttontable"></i></a>
+
+                                                <div class="text-light title">Time</div>
+                                                <input type="checkbox" style="width: 10px;">
+                                            </div>
+                                            <div class="dFlex">
+                                                <button class="tablePlusIcon">
+                                                    <i class="far fa-plus"></i>
+                                                </button>
+
+                                            </div>
+
+                                        </div>
+                                    </th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="titleTbody">
+
+                                            <div class="titleTbodyCheck dFlex">
+                                                <input type="checkbox">
+                                            </div>
+                                            <div class="titleTbodyText">
+                                                is Mondatory
+                                            </div>
+
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="titleTbody">
+
+                                            <div class="titleTbodyCheck dFlex">
+                                                <input type="checkbox">
+                                            </div>
+                                            <div class="titleTbodyText">
+                                                salam est ucundu bunlar sdms gedel oppalara sad asresfdfdfsd
+                                            </div>
+
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="bgF7F7F7 d-flex justify-content-end ">
+                            <input class="tableEndInp addInput d-none" type="text">
+                        </div>
                     </div>
+                    <!-- ipsum table -->
+                    <div class="mb-2 mr-2 bgF7F7F7 tableCon">
+                        <table class="tableTitle">
+                            <thead>
+                                <tr>
+                                    <th style="width:22px w-100">
+                                        <div class="d-flex" style="position:relative;">
+                                            <div class="tableTitle_sira dFlex text-light">
+                                                <span class="title">4</span>
+                                            </div>
+                                            <div class="tableTitle_title dFlex">
+                                                <a href="#" class="text-light"><i
+                                                        class="fal fa-ellipsis-v text-light buttontable"></i></a>
+
+                                                <div class="text-light title">Ipsum</div>
+                                                <input type="checkbox" style="width: 10px;">
+                                            </div>
+                                            <div class="dFlex">
+                                                <button class="tablePlusIcon">
+                                                    <i class="far fa-plus"></i>
+                                                </button>
+
+                                            </div>
+
+                                        </div>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                    <div class="mb-2 mr-2 impusChildDiv tableCon">
+                                        <table class="tableTitle">
+                                            <thead>
+                                                <tr>
+                                                    <th style="width:22px w-100">
+                                                        <div class="d-flex" style="position:relative;">
+                                                            <div class="tableTitle_sira dFlex text-light">
+                                                                <span class="title">3</span>
+                                                            </div>
+                                                            <div class="tableTitle_title dFlex">
+                                                                <a href="#" class="text-light"><i
+                                                                        class="fal fa-ellipsis-v text-light buttontable"></i></a>
+
+                                                                <div class="text-light title">Time</div>
+                                                                <input type="checkbox" style="width: 10px;">
+                                                            </div>
+                                                            <div class="dFlex">
+                                                                <button class="tablePlusIcon">
+                                                                    <i class="far fa-plus"></i>
+                                                                </button>
+
+                                                            </div>
+
+                                                        </div>
+                                                    </th>
+
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <div class="titleTbody">
+
+                                                            <div class="titleTbodyCheck dFlex">
+                                                                <input type="checkbox">
+                                                            </div>
+                                                            <div class="titleTbodyText">
+                                                                is Mondatory
+                                                            </div>
+
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="titleTbody">
+
+                                                            <div class="titleTbodyCheck dFlex">
+                                                                <input type="checkbox">
+                                                            </div>
+                                                            <div class="titleTbodyText">
+                                                                salam est ucundu bunlar sdms gedel oppalara sad
+                                                                asresfdfdfsd
+                                                            </div>
+
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <div class="bgF7F7F7 d-flex justify-content-end ">
+                                            <input class="tableEndInp addInput d-none" value="asdsad" type="text">
+                                        </div>
+                                    </div>
+                                    </td>
+                                   
+                                </tr>
+                                 <tr>
+                                    <td>
+                                    <div class="mb-2 mr-2 impusChildDiv tableCon">
+                                        <table class="tableTitle">
+                                            <thead>
+                                                <tr>
+                                                    <th style="width:22px w-100">
+                                                        <div class="d-flex" style="position:relative;">
+                                                            <div class="tableTitle_sira dFlex text-light">
+                                                                <span class="title">3</span>
+                                                            </div>
+                                                            <div class="tableTitle_title dFlex">
+                                                                <a href="#" class="text-light"><i
+                                                                        class="fal fa-ellipsis-v text-light buttontable"></i></a>
+
+                                                                <div class="text-light title">Time</div>
+                                                                <input type="checkbox" style="width: 10px;">
+                                                            </div>
+                                                            <div class="dFlex">
+                                                                <button class="tablePlusIcon">
+                                                                    <i class="far fa-plus"></i>
+                                                                </button>
+
+                                                            </div>
+
+                                                        </div>
+                                                    </th>
+
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <div class="titleTbody">
+
+                                                            <div class="titleTbodyCheck dFlex">
+                                                                <input type="checkbox">
+                                                            </div>
+                                                            <div class="titleTbodyText">
+                                                                is Mondatory
+                                                            </div>
+
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="titleTbody">
+
+                                                            <div class="titleTbodyCheck dFlex">
+                                                                <input type="checkbox">
+                                                            </div>
+                                                            <div class="titleTbodyText">
+                                                                salam est ucundu bunlar sdms gedel oppalara sad
+                                                                asresfdfdfsd
+                                                            </div>
+
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <div class="bgF7F7F7 d-flex justify-content-end ">
+                                            <input class="tableEndInp addInput d-none" value="asdsad" type="text">
+                                        </div>
+                                    </div>
+                                    </td>
+                                   
+                                </tr>
+
+                            </tbody>
+                        </table>
+                        <div class="bgF7F7F7 d-flex justify-content-end ">
+                            <input class="tableEndInp addInput d-none" type="text">
+                        </div>
+                    </div>
+
+
                 </div>
             </div>
         </div>
