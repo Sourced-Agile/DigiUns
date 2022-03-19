@@ -7,7 +7,7 @@
     margin: 0px;
 }
 body{
-    background-color: black;
+    background-color: green;
 }
 .title{
   font-family: 'Quicksand',
@@ -29,9 +29,32 @@ body{
      align-items: center;
      justify-content: center;
 }
-.container {  
+.container { 
    
     background: #F7F7F7;
+    border-radius: 15px 15px 0px 0px;
+}
+.cardHeader{
+    width: 100%;
+    height: 40px;
+    background-color: #E8E8E8;
+    display: flex;
+    align-items: center;
+}
+.cardHeaderPlus{
+        border-radius: 0px 5px 5px 0px;
+        width: 28px;
+        height: 28px;
+        background: #595959;
+        border: none;
+        color: #F7F7F7;
+}
+
+.titleAcar{
+        position: absolute;
+        top: 13px;
+        right: 24px;
+        color: #595959;
 }
 
 .photoContainer { 
@@ -40,7 +63,7 @@ body{
     top: 20px;  
     width: 25%;
     height: 582px;
-    margin: 12px 0px 12px 0px;
+    margin: 0px 0px 12px 0px;
 }
 .photoContainer img{
       width: 100%;
@@ -50,28 +73,27 @@ body{
 .cartContainer {
      overflow: scroll;
     width: 75%;    
-    margin: 12px 0px 12px 0px;
+    margin: 0px 0px 12px 0px;
     background: #E8E8E8;
 }
 .cardheader {
+    background-color: #F7F7F7;
     overflow: hidden;
     position: relative;
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 100%;
-    height: 38px;   
+    height: 45px;   
 }
-.cardTitle {
-    position: absolute;
+.cardTitle {   
+    font-size: 20px; 
     display: flex;
     justify-content: center;
     align-items: center;
     color: #E01E37;
     width: 160px;
-    height: 40px;
-    margin-top: -12px;
-    background: #F7F7F7;
-    border-radius: 0px 0px 15px 15px;
+    height: 100%;          
 }
 .cardBody {       
     width: 100% ;
@@ -109,6 +131,10 @@ background-color: #E01E37;
    background-color: #595959;
    color: #F7F7F7;
 }
+.tableCon{
+    min-height: 45px;
+    background-color: #F7F7F7;
+}
 .buttontable{
     width: 25px;
     height: 10px;
@@ -138,6 +164,20 @@ background-color: #E01E37;
    line-height: 15px;
    color: #595959;
 }
+#addInput{
+    border: none;
+    font-size: 12px;
+    font-family: 'Quicksand',
+    sans-serif;
+    padding: 5px;
+    height: 20px;
+    margin: auto;
+    margin-bottom:5px;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
+    background: #FFFFFF;
+    border-radius: 5px;
+    width: 95%;
+}
 .tableEndInp{   
     border: none;
     font-size: 12px;
@@ -145,6 +185,7 @@ background-color: #E01E37;
      sans-serif;
     padding: 5px;
     height: 20px;
+    margin-top: 5px;
     margin-right: 5px;
     margin-bottom: 5px;
     box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
@@ -172,9 +213,11 @@ background-color: #E01E37;
        
 }
 .descSortArrow{
-    width: 10px;
-    height: 100%;
-    display: flex;
+     height: 15px;
+     width: 15px;
+     display: flex;
+     justify-content: center;
+     border-radius: 2px;
     align-items: center;
 }
 .descSortArrow i{
@@ -183,4 +226,23 @@ background-color: #E01E37;
 }
 .titleTbody:hover .descSortArrow i{
     visibility: visible;
+}
+
+.descSortArrow:hover{
+    background: #E01E37;
+    box-shadow: 0px 0px 2px #E01E37;
+    color: white;
+}
+
+.cs-svg-icon.hour-01:after{
+    content: "";
+    background: #E01E37;
+    display: inline-block;    
+    width: 18px;
+    height: 25px;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    vertical-align: middle;    
+
+    background-image: url(./svg/Vector.svg);
 }
