@@ -234,15 +234,7 @@ background-color: #E01E37;
     color: white;
 }
 
-.cs-svg-icon.hour-01:after{
-    content: "";
-    background: #E01E37;
-    display: inline-block;    
-    width: 18px;
-    height: 25px;
-    background-size: 50%;
-    background-repeat: no-repeat;
-    vertical-align: middle;    
+.ipsumDragIcon{
 
-    background-image: url(./svg/Vector.svg);
+    display: flex;
 }
