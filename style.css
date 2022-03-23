@@ -9,6 +9,16 @@
 body{
     background-color: green;
 }
+.width0{
+  width: 0px;
+  border: none;
+}
+.trans{
+    transition: 0.4s;
+}
+.bgQ{
+     background: #E01E37 !important;
+}
 .title{
   font-family: 'Quicksand',
   sans-serif;
@@ -28,6 +38,11 @@ body{
      display: flex;
      align-items: center;
      justify-content: center;
+}
+.serhed {
+    background: none;
+    transition: 0.3s;
+
 }
 .container { 
    
@@ -49,6 +64,21 @@ body{
         border: none;
         color: #F7F7F7;
 }
+.cardHeaderPlusToggle{
+     background: #ffffff;
+      color: #595959;
+      
+}
+.headAddNewInp{       
+       width: 250px !important;
+       height: 28px;       
+       border: none;  
+       padding-left: 10px;      
+        font-size: 12px;
+        font-family: 'Quicksand',
+        sans-serif;           
+       
+       }
 
 .titleAcar{
         position: absolute;
@@ -71,7 +101,7 @@ body{
       object-fit: fill;
 }
 .cartContainer {
-     overflow: scroll;
+    overflow: scroll;
     width: 75%;    
     margin: 0px 0px 12px 0px;
     background: #E8E8E8;
@@ -96,8 +126,7 @@ body{
     height: 100%;          
 }
 .cardBody {       
-    width: 100% ;
-    height: 22px;
+    width: 100% ;   
 }
 .tableTitle{
     background-color: #F7F7F7;
@@ -164,20 +193,7 @@ background-color: #E01E37;
    line-height: 15px;
    color: #595959;
 }
-#addInput{
-    border: none;
-    font-size: 12px;
-    font-family: 'Quicksand',
-    sans-serif;
-    padding: 5px;
-    height: 20px;
-    margin: auto;
-    margin-bottom:5px;
-    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
-    background: #FFFFFF;
-    border-radius: 5px;
-    width: 95%;
-}
+
 .tableEndInp{   
     border: none;
     font-size: 12px;
@@ -235,6 +251,124 @@ background-color: #E01E37;
 }
 
 .ipsumDragIcon{
-
+    cursor: pointer;
+    height: 100%;
     display: flex;
+    align-items: center;
+    justify-content: center;  
+    width: 15px;
+    
+}
+.tableTitle_ipsum{
+    display: flex;
+    align-items: center;
+    background-color: #E01E37;
+}
+.ipsumMwnuIconactive{
+    cursor: pointer;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 15px;
+        font-size: 13px;
+        background-color: #FFFFFF;
+        color: #595959;
+}
+.ipsumMwnuIcon{
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15px;
+    font-size: 13px;
+}
+.ipsumheadTitleHisse{
+        width: 94%;
+        display: flex;
+        background: #595959;
+        margin: rig;
+        margin-right: 9px;
+        align-items: center;
+        justify-content: space-between;
+}
+.ipsum_title{
+       display: flex;
+        height: 100%;      
+        width: 85%;
+        justify-content: center;
+        align-items: center;        
+}
+.ipsum_title_end{       
+        width: 15%;
+        display: flex;
+        align-items: center;
+        justify-content: end;        
+}
+.ipsum_title_plus{
+         border: none;
+         height: 100%;
+         width: 28px;
+         background: #595959;
+         color: #FFFFFF;
+}
+.ipsumBodyContainer{
+    margin-left: 30px;
+    margin-right: 9px;
+       
+    height: auto;
+}
+.ipsum_title_end_icons{
+      height: 100%;
+      width: 28px;
+}
+.ipsumChildDragIcon {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15px;
+
+}
+.ipsumBodyTitleCh{
+    position: relative;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 25px;
+        
+}
+.ipsumBodyTitleChhead{
+    width: 150px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+     background: #595959;
+  
+}
+.ipsumBodyTitleChDrag{
+    width: 18px;
+    height: 100%;
+     background: #595959;
+     color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.impsumTitleYazisi{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:#FFFFFF;
+}
+.ipsumCHTitleRight{
+    cursor: pointer;
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }

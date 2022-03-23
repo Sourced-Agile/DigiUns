@@ -32,32 +32,32 @@
             <div class="cardTitle">
                 NEWS PAGE
             </div>
-            <div class="titleAcar">       
-                   <i class="far fa-wrench"></i>            
-             
+            <div class="titleAcar">
+                <i class="far fa-wrench"></i>
+
             </div>
         </div>
+
         <div>
             <div class="box d-flex">
+                <!--  photo -->
                 <div class="photoContainer">
                     <img src="fontawsome/Apple-iPhone12Pro-iOS15-health-sharing-060721_carousel.jpg 1.jpg" alt="">
                 </div>
+                <!-- body -->
                 <div class="cartContainer">
+                    
                     <!-- card header -->
                     <div class="cardHeader">
-                        <!-- + btn -->
-                        <div>
+
+                        <div class="d-flex">
+                            <input class="width0 trans" placeholder="Add new input" type="text" name="" id="addInput">
                             <button class="cardHeaderPlus">
                                 <i class="far fa-plus"></i>
                             </button>
-                        </div>                      
-                        
-                        <!-- add new inp -->
-                        <div class="dFlex h-100">
-                            <input class="headAddNewInp" placeholder="Add new input" type="text" name="" id="addInput">
-                        </div>
-                        </div>                 
-
+                        </div>                        
+                    </div>
+                    <!-- title card -->
                     <div class="cardBody">
                         <!-- body title table -->
                         <div class="mb-2 mr-2 tableCon">
@@ -127,37 +127,80 @@
                             <div class="bgF7F7F7 d-flex justify-content-end ">
                                 <input class="tableEndInp addInput d-none" placeholder="Title" type="text">
                             </div>
-                        </div>
-                        <!--body ipsum-->
+                        </div>                  
                         
-                        <div>
-                            <div class="d-flex" style="position:relative;">
-                                                
-                                                <div class="tableTitle_sira dFlex text-light">
-                                                    <div class="ipsumDragIcon">
-                                                        <i class="far fa-ellipsis-v"></i>
-                                                        <i class="far fa-ellipsis-v"></i>
-                                                    </div>
-                                                    <div class="class="title"">
-                                                        1
-                                                    </div>
-                                                    <div>
-                                                      <i class="far fa-angle-double-down"></i>
-                                                    </div>
-                                                    
-                                                </div>
-                                                <div class="tableTitle_sira dFlex text-light">
-                                                    
-                                                    <!-- <i class="cs-svg-icon impusList"></i> -->
-                                                </div>
-                                                <div class="tableTitle_title dFlex">
-                                                    <a href="#" class="text-light"><i
-                                                            class="fal fa-ellipsis-v text-light buttontable"></i></a>
+                    </div>
 
-                                                    <div class="text-light title">Title</div>
-                                                    <input type="checkbox" style="width: 10px;">
+                    <!--body ipsum-->
+                        <div class="serhed">
+                            <!-- ipsum header -->
+                            <div class="d-flex" style="height: 25px;">
+
+                                <div class="tableTitle_ipsum text-light">
+                                    <div class="ipsumDragIcon" id="ipsumCartDragandDrop">
+                                        <i class="far fa-ellipsis-v"></i>
+                                        <i class="far fa-ellipsis-v"></i>
+                                    </div>
+                                    <div class="title ipsumDragIcon">
+                                        2
+                                    </div>
+                                    <div class="ipsumMwnuIcon" id="ipsumCartmenuIcon">
+                                        <i class="far fa-angle-double-up"></i>
+                                    </div>
+
+                                </div>
+                                <div class="ipsumheadTitleHisse">
+
+                                    <div class="text-light title ipsum_title">ipsum</div>
+
+                                    <div class="ipsum_title_end">
+                                         <button class="ipsum_title_plus ipsum_title_end_icons">
+                                            <i class="fal fa-ellipsis-v text-light"></i>
+                                        </button>
+                                        <div class="ipsum_title_end_icons">
+                                          <input class="ml-2" type="checkbox" style="width: 10px;">
+
+                                        </div>
+                                       
+                                        <button class="ipsum_title_plus ipsum_title_end_icons" id="plusAddIpsum">
+                                        <i class="far fa-plus"></i>
+                                        </button>
+                                    </div>                                    
+
+                                </div>                               
+
+                            </div>
+                             <div class="bgF7F7F7 d-flex justify-content-end" style="background: #E8E8E8;">
+                                <input  id="addIpsumInputt" class="tableEndInp addInput d-none" placeholder="Title" type="text">
+                            </div>
+                            <!-- ipsum body -->
+                            <div class="ipsumContaineriAddUcun d-none">
+
+                                <div class="ipsumBodyContainer">
+                                <div class="mb-2 mr-2 mt-1 w-100 tableCon">
+                                    <table class="tableTitle">
+                                <thead>
+                                    <tr>
+                                        <th class="w-100">
+                                            
+                                            <div class="ipsumBodyTitleCh">
+                                                 <div class="ipsumBodyTitleChDrag" style="cursor: pointer;">
+                                                    <i class="far fa-ellipsis-v"></i>
+                                                    <i class="far fa-ellipsis-v"></i>
+                                                  </div>
+                                                <div class="ipsumBodyTitleChDrag title ipsumBodyForOrder">
+                                                    1
                                                 </div>
-                                                <div class="dFlex">
+                                                <div class="ipsumBodyTitleChhead">                                                                                                     
+
+                                                    <div class="impsumTitleYazisi title">Title</div>
+                                                     <div class="ipsumCHTitleRight">
+                                                       <i class="fal fa-ellipsis-v text-light"></i>
+                                                       <input class="" type="checkbox" style="width: 10px;">
+                                                    </div> 
+                                                   
+                                                    </div>
+                                                <div class="">                                                    
                                                     <button class="tablePlusIcon">
                                                         <i class="far fa-plus"></i>
                                                     </button>
@@ -165,9 +208,57 @@
                                                 </div>
 
                                             </div>
+                                        </th>
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="titleTbody">
+                                                <div class="titleTbodyCheck dFlex">
+                                                    <input type="checkbox">
+                                                </div>
+                                                <div class="descSortArrow">
+                                                    <i class="far fa-expand-arrows"></i>
+                                                </div>
+                                                <div class="titleTbodyText">
+                                                    - is Mondatory
+                                                </div>
+
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="titleTbody">
+
+                                                <div class="titleTbodyCheck dFlex">
+                                                    <input type="checkbox">
+                                                </div>
+                                                <div class="descSortArrow">
+                                                    <i class="far fa-expand-arrows"></i>
+                                                </div>
+                                                <div class="titleTbodyText">
+                                                    - salam est ucundu bunlar sdms gedel oppalara sad asresfdfdfsd
+                                                </div>
+
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                    </table>
+                                    <div class="bgF7F7F7 d-flex justify-content-end ">
+                                    <input class="tableEndInp addInput d-none" placeholder="Title" type="text">
+                                    </div>
+                                </div>
+                                
+
+                            </div>
+                            
+                            </div>
                         </div>
 
-                    </div>
                 </div>
             </div>
         </div>
