@@ -365,10 +365,63 @@ background-color: #E01E37;
     justify-content: center;
     color:#FFFFFF;
 }
-.ipsumCHTitleRight{
+
+
+/* flow ucun */
+.ipsumCHTitleRight {
+    position: relative;
     cursor: pointer;
     width: 30%;
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+.ipsumtitleUcNoqteMenu{
+    position: absolute;
+    top: 25px;
+    left: 0px;
+    width: 180px;
+    height: auto;
+    background: #c9c6c6;
+}
+.selectMEnu{
+        width: 80%;
+        margin-left: 10%;
+}
+.selectMEnulabel{
+    display: block;
+        width: 80%;
+        margin: 5px 0px 1px 10%;       
+        font-size: 12px;       
+}
+.TextareaMEnu{
+        width: 80%;
+         margin-left: 10%;
+             margin-top: 10px;
+             min-height: 50px;
+             padding:0px 5px 0px 5px;
+             font-size: 12px;            
+}
+.btnMEnuAcan{
+    width: 20px;
+    height: 100%;
+    background: none;
+    border: none;
+}
+.acilanMenuBtns{
+        width: 80%;
+        margin-left: 10%;
+        display: flex;
+        justify-content: space-evenly;
+}
+.btnsAcilanMenu{
+    border: none;
+    width: 25px;
+    height: 25px;
+    background: #595959;
+    color: #F7F7F7;
+   
+}
+.btnMEnuAcanselectUcun{
+    box-shadow: 5px 5px 18px #595959;
 }

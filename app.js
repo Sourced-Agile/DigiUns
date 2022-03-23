@@ -150,49 +150,8 @@ $(document).on('change', '.tableEndInp', function () {
 $(document).on('click', '#ipsumCartmenuIcon', function () {
   $(this).toggleClass('ipsumMwnuIconactive ipsumMwnuIcon');
   $(this).find('i').toggleClass('fa-angle-double-up fa-angle-double-down')
-  $('.ipsumContaineriAddUcun').toggleClass('d-none')
-
-
-  
-  	  var $span = $(this),
-  	    $parentTr = $span.closest("div");
-
-  	  //remove
-  	  if ($span.hasClass("fa-rotate-90")) {
-  	    $span.removeClass("fa-rotate-90");
-  	    $parentTr
-
-  	      .next()
-  	      .children("td")
-  	      .animate({
-  	        padding: 0
-  	      })
-  	      .wrapInner("<div/>")
-  	      .children()
-  	      .slideUp(function () {
-  	        var $tr = $(this).closest("div");
-
-  	        $tr.remove();
-  	        $parentTr.removeClass("tr-selected");
-  	      });
-
-  	    return;
-  	  }
-
-  	  //add
-  	  $span.addClass("fa-rotate-90");
-  	  if ($parentTr.next().hasClass("tr-detail")) return;
-  	  $parentTr.addClass("tr-selected");
-
-  	  $("#tr-detail")
-  	    .clone()
-  	    .removeClass("hidden")
-  	    .insertAfter($parentTr)
-  	    .children("td")
-  	    .animate()
-  	    .wrapInner("<div style='display:none'/>")
-  	    .children()
-  	    .slideDown();
+  $('.ipsumContaineriAddUcun').toggleClass('d-none')  
+  	  
   	});
 
 
@@ -202,5 +161,9 @@ $(document).on('click', '.cardHeaderPlus', function () {
   $(this).find('i').toggleClass('fa-times fa-plus');
   $('#addInput').toggleClass('headAddNewInp width0');
   
+})
+
+$(document).on('click', '.btnMEnuAcanselectUcun', function (event) {
+    event.stopPropagation();
 })
 
