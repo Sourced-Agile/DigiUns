@@ -1,4 +1,4 @@
-const SqlGeneratorClass = {
+const miniStoryCard = {
     loader: function () {      
         $('body').html(this.genBlock());
          $('.selectpicker').selectpicker('refresh')
@@ -13,95 +13,12 @@ const SqlGeneratorClass = {
     },
     genSection1: function () {
         return `
-                    <div class="section_box1Dbb">
-                    <!-- head -->
-                    <div class="inputContainerDbb">
-                        <div class="cs-input-boxDbb">
-                            <span>Database Name</span>
-                            <select class="selectpicker select" multiple id="" data-live-search="true" data-size="6"
-                                data-show-subtext="true">
-                        
-                            </select>
-                        </div>
-                        <div class="cs-input-boxDbb">
-                            <span>Table Name</span>
-                            <select class="selectpicker select" multiple id="" data-live-search="true" data-size="6"
-                                data-show-subtext="true">
-
-                            </select>
-                        </div>
-                        <div class="cs-input-boxDbb">
-                            <span>Field Name</span>
-                            <select class="selectpicker select" multiple id="" data-live-search="true" data-size="6"
-                                data-show-subtext="true">
-
-                            </select>
-                        </div>
-                        <div class="cs-input-boxDbb">
-                            <button class="headBtnDbb"><i class="fas fa-plus"></i></button>
-                        </div>
-                    </div>
-                    <!-- body -->
-                    <div class="tableBodyDb">
-                        <table class="table table-hover table-striped">
-                            <thead>
-                                <tr>
-                                    <th scope="col">#</th>
-                                    <th scope="col">Database</th>
-                                    <th scope="col">Table</th>
-                                    <th scope="col">Field</th>
-                                    <th scope="col"></th>
-                                </tr>
-                            </thead>
-                            <tbody>                   
-                            
-                            </tbody>
-                        </table>
-                    </div>
-                    </div>
+                  
         `
     },
     genSection2: function () {
         return `
-             <div class="section_box2Dbb">
-                    <!-- head -->
-                    <div class="inputContainerDbb">
-                        <div class="cs-input-boxDbb">
-                            <span>Database Name</span>
-                            <select class="selectpicker select" multiple id="" data-live-search="true" data-size="6"
-                                data-show-subtext="true">
-                        
-                            </select>
-                        </div>
-                        <div class="cs-input-boxDbb">
-                            <span>Table Name</span>
-                            <select class="selectpicker select" multiple id="" data-live-search="true" data-size="6"
-                                data-show-subtext="true">
-
-                            </select>
-                        </div>            
-                        <div class="cs-input-boxDbb">
-                            <button class="headBtnDbb"><i class="fas fa-plus"></i></button>
-                        </div>
-                    </div>
-                    <!-- body -->
-                    <div class="tableBodyDb">
-                        <table class="table table-hover table-striped">
-                            <thead>
-                                <tr>
-                                    <th scope="col">#</th>
-                                    <th scope="col">Database</th>
-                                    <th scope="col">Table</th>                      
-                                    <th scope="col"></th>
-                                </tr>
-                            </thead>
-                            <tbody>                  
-                            
-                            </tbody>
-                        </table>
-                    </div>
-
-        </div>
+             
 
         `
     }
@@ -109,9 +26,45 @@ const SqlGeneratorClass = {
 }
 
 
-// $(document).ready(function () {
-//     SqlGeneratorClass.loader();
-// })
+
+    //ipsum plus click
+$(document).on('click', '#plusAddIpsum', function() {
+        $(this).find('i').toggleClass('fa-times fa-plus')
+        $('#addIpsumInputt').toggleClass('d-none')
+    })
+    //ipsum add
+$(document).on('change', '#addIpsumInputt', function() {
+        v = $(this).val();
+        miniStoryCard.addIpsum(this, v)
+    })
+   // add descriptiom change
+$(document).on('change', '.tableEndInp', function() {
+        miniStoryCard.addNewDesc(this)
+    })
+    //menu bar
+$(document).on('click', '#ipsumCartmenuIcon', function() {
+    $(this).toggleClass('ipsumMwnuIconactive ipsumMwnuIcon');
+    $(this).find('i').toggleClass('fa-angle-double-up fa-angle-double-down')
+    $('.ipsumContaineriAddUcun').toggleClass('d-none')
+
+});
+
+
+
+$(document).on('click', '.cardHeaderPlus', function() {
+    $(this).toggleClass('cardHeaderPlusToggle');
+    $(this).find('i').toggleClass('fa-times fa-plus');
+    $('#addInput').toggleClass('headAddNewInp width0');
+
+})
+
+$(document).on('click', '.btnMEnuAcanselectUcun', function(event) {
+    event.stopPropagation();
+})
+
+$(document).ready(function () {
+    SqlGeneratorClass.loader();
+})
 
 
     

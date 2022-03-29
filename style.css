@@ -1,79 +1,457 @@
-.containerDbb {
-    min-width: 100%;
-}
-.font20px{
-    font-size: 20px;
-}
-
-.section_box1Dbb {
-    position: relative;
-    min-width: 100%;
-    height: auto;
-    background-color: #f1f1f1;
-    padding: 0px 40px 0px 40px;
+* {
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    padding: 0px;
+    margin: 0px;
 }
 
-.section_box2Dbb {
-    position: relative;
-    margin-top: 30px;
-    min-width: 100%;
-    height: auto;
-    background-color: #f1f1f1;
-    padding: 0px 40px 0px 40px;
-}
-.section_where {
-    position: relative;
-    margin-top: 30px;
-    min-width: 100%;
-    height: auto;
-    background-color: #f1f1f1;
-    padding: 0px 40px 0px 40px;
+body {
+    background-color: green;
 }
 
-.inputContainerDbb {
+.trans {
+    transition: 0.4s;
+    width: 0px;
+    border: none;
+}
+
+.bgQ {
+    background: #E01E37 !important;
+}
+
+.bg59 {
+    background-color: #595959 !important;
+}
+
+.title {
+    font-family: 'Quicksand',
+        sans-serif;
+    /*letter-spacing:1px;*/
+    height: 16px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.bgF7F7F7 {
+    background-color: #F7F7F7 !important;
+}
+.ipsumInpAdd{
+        background: #F7F7F7;
+        padding-left: 15px;
+        display: flex;
+        justify-content: end;
+}
+
+.dFlex {
     display: flex;
-    justify-content: start;
+    align-items: center;
+    justify-content: center;
+}
+
+.serhed {
+    background: none;
+    transition: 0.3s;
+}
+
+.container {
+    background: #F7F7F7;
+    border-radius: 15px 15px 0px 0px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cardHeader {
+    width: 100%;
+    height: 40px;
+    background-color: #E8E8E8;
+    display: flex;
     align-items: center;
 }
 
-.cs-input-boxDbb {
+.bodyEndInpDiv {
     display: flex;
-    height: 100%;
-    flex-direction: column;
-    margin: 15px;
-}
-.deyerCss{
-        height: 37px;
-        border-color: #595959;
-        border-radius: 5px;
-        width: 100px;
-        padding-left: 5px;
-}
-.cs-input-boxDbb .btn {
-    background: #595959 !important;
-    border-radius: 5px !important;
-    color: #e6dede !important;
-}
-.OPerationCss .btn{
-    width: 70px;
-    height: 37px;
-}
-.OPerationCss{
-    width: 70px !important;
+    justify-content: end;
 }
 
-.headBtnDbb {
+.cardHeaderPlus {
+    border-radius: 0px 5px 5px 0px;
+    width: 28px;
+    height: 28px;
+    background: #595959;
     border: none;
-    background: #515074;
-    width: 40px;
-    height: 37px;
+    color: #F7F7F7;
+}
+
+.cardHeaderPlusToggle {
+    background: #ffffff;
+    color: #595959;
+}
+
+.headAddNewInp {
+    width: 250px !important;
+    height: 28px;
+    border: none;
+    padding-left: 10px;
+    font-size: 12px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.titleAcar {
+    position: absolute;
+    top: 13px;
+    right: 24px;
+    color: #595959;
+}
+
+.photoContainer {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 20px;
+    width: 25%;
+    height: 582px;
+    margin: 0px 0px 12px 0px;
+}
+
+.photoContainerimg {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.cartContainer {
+    width: 75%;
+    margin: 0px 0px 12px 0px;
+    background: #E8E8E8;
+}
+
+.cardheader {
+    background-color: #F7F7F7;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 45px;
+}
+
+.cardTitle {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #E01E37;
+    max-width: 100%;
+    overflow: hidden;
+    height: 100%;
+}
+
+.tableTitle {
+    background-color: #F7F7F7;
+    border: none;
+    width: 100%;
+}
+
+.descTitle_title {
+    padding: 0px 5px 0px 5px;
+    width: 150px;
+    height: 25px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #E01E37;
+}
+
+.descTitle_sira {
+    width: 25px;
+    height: 25px;
+    background-color: #595959;
+}
+
+.descPlusIcon {
+    width: 25px;
+    height: 25px;
+    color: #595959;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    border: none;
+    background: none;
+}
+
+.buttondesc {
+    width: 25px;
+    height: 10px;
+    background: none;
+    border: none;
+}
+
+.descBodyrow {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 5px 0px 5px 0px;
+    height: 20px;
+    width: 100%;
+}
+
+.titlebodyCheck {
+    width: 25px;
+    height: 25px;
+}
+
+.titlebodyCheck input {
+    width: 10px;
+}
+
+.titlebodyText {
+    margin-left: 5px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    line-height: 15px;
+    color: #595959;
+
+}
+
+.bodyEndInp {
+    border: none;
+    font-size: 12px;
+    font-family: 'Quicksand', sans-serif;
+    padding: 5px;
+    height: 20px;
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
+    background: #FFFFFF;
     border-radius: 5px;
-    margin-top: 21px;
+    width: 95%;
+}
+
+.descSortArrow {
+    cursor: pointer;
+    width: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.descSortArrowTitle {
+    cursor: pointer;
+    width: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.descSortArrow:hover {
+    background: #E01E37;
+    box-shadow: 0px 0px 2px #E01E37;
     color: white;
 }
 
-.tableBodyDb {
+.ipsumDragIcon {
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+}
+
+.tableTitle_ipsum {
+    display: flex;
+    align-items: center;
+    background-color: #E01E37;
+}
+
+
+
+.ipsumheadTitleHisse {
     width: 100%;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    display: flex;
+    background: #595959;
+    margin: rig;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ipsum_title {
+    display: flex;
+    height: 100%;
+    width: 85%;
+    justify-content: center;
+    align-items: center;
+}
+
+.ipsum_title_end {
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.ipsum_title_plus {
+    border: none;
+    height: 100%;
+    width: 28px;
+    background: #595959;
+    color: #FFFFFF;
+}
+
+.ipsumContaineriAddUcun {
+    margin-left: 50px;
+    height: auto;
+}
+
+.ipsum_title_end_icons {
+    height: 100%;
+    width: 28px;
+}
+
+.ipsumBodyTitleCh {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 25px;
+
+}
+
+.ipsumBodyTitleChhead {
+    width: 150px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #595959;
+}
+
+.ipsumBodyTitleChDrag {
+    width: 18px;
+    height: 100%;
+    background: #595959;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.impsumTitleYazisi {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+}
+
+/*flowucun*/
+.ipsumCHTitleRight {
+    position: relative;
+    cursor: pointer;
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ipsumtitleUcNoqteMenu {
+    position: absolute;
+    top: 25px;
+    left: 0px;
+    width: 180px;
+    height: auto;
+    background: #c9c6c6;
+}
+
+.selectMEnu {
+    width: 80%;
+    margin-left: 10%;
+}
+
+.selectMEnulabel {
+    display: block;
+    width: 80%;
+    margin: 5px 0px 1px 10%;
+    font-size: 12px;
+}
+
+.TextareaMEnu {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 10px;
+    min-height: 50px;
+    padding: 0px 5px 0px 5px;
+    font-size: 12px;
+}
+
+.btnMEnuAcan {
+    width: 20px;
+    height: 100%;
+    background: none;
+    border: none;
+}
+
+.acilanMenuBtns {
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.btnsAcilanMenu {
+    border: none;
+    width: 25px;
+    height: 25px;
+    background: #595959;
+    color: #F7F7F7;
+}
+
+.btnMEnuAcanselectUcun {
+    box-shadow: 5px 5px 18px #595959;
+}
+
+.ipsumContainer {
+    background: #f7f7f7;
+    margin-right: 9px;
+    padding-bottom: 1px;
+}
+
+.ipsumMwnuIcon {
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15px;
+    font-size: 13px;
+    background-color: #FFFFFF;
+    color: #595959;
+}
+.ipsumMwnuIconactive {
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15px;
+    font-size: 13px;
+}
+
+.ipsumBodyTitleCh::before {
+    content: '';
+    width: 10px;
+    height: 45px;
+    border-left:1px solid black;
+    border-bottom:1px solid black;    
+    position: absolute;
+    left: -10px;
+    top: -30px;
 }
