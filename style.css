@@ -29,6 +29,7 @@ body {
         sans-serif;
     /*letter-spacing:1px;*/
     height: 16px;
+    width: 100%;
     font-style: normal;
     font-weight: 400;
     font-size: 13px;
@@ -162,7 +163,7 @@ body {
     width: 150px;
     height: 25px;
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
     background-color: #E01E37;
 }
 
@@ -181,8 +182,16 @@ body {
     top: 0px;
     border: none;
     background: none;
+    visibility: hidden;
 }
-
+.descPlusIconclick{ 
+     visibility: visible !important;
+    color: white !important;
+    background-color: #595959 !important;
+}
+.descCont:hover .descPlusIcon {
+  visibility: visible !important;
+}
 .buttondesc {
     width: 25px;
     height: 10px;
@@ -193,6 +202,7 @@ body {
 .descBodyrow {
     display: flex;
     justify-content: start;
+    position: relative;
     align-items: center;
     margin: 5px 0px 5px 0px;
     height: 20px;
@@ -306,9 +316,12 @@ body {
 }
 
 .ipsumContaineriAddUcun {
-    margin-left: 50px;
-    height: auto;
+        width: 94%;
+        margin-left: 6%;   
+        margin-top: 5px; 
+        height: auto;
 }
+
 
 .ipsum_title_end_icons {
     height: 100%;
@@ -416,15 +429,21 @@ body {
 
 .btnMEnuAcanselectUcun {
     box-shadow: 5px 5px 18px #595959;
+        position: absolute !important;
+        transform: translate3d(-150px, 24px, 0px) !important;
+        top: 0px;
+        left: 0px;
+        will-change: transform;
 }
 
 .ipsumContainer {
     background: #f7f7f7;
     margin-right: 9px;
-    padding-bottom: 1px;
+    padding-top: 5px;
+    padding-bottom: 10px;
 }
 
-.ipsumMwnuIcon {
+.ipsumMwnuIconactive {
     cursor: pointer;
     height: 100%;
     display: flex;
@@ -435,7 +454,7 @@ body {
     background-color: #FFFFFF;
     color: #595959;
 }
-.ipsumMwnuIconactive {
+.ipsumMwnuIcon {
     cursor: pointer;
     height: 100%;
     display: flex;
@@ -444,7 +463,6 @@ body {
     width: 15px;
     font-size: 13px;
 }
-
 .ipsumBodyTitleCh::before {
     content: '';
     width: 10px;
@@ -454,4 +472,20 @@ body {
     position: absolute;
     left: -10px;
     top: -30px;
+}
+.dropFontSize{
+    font-size: 11px;
+}
+.dropdowndesc{
+        visibility: hidden;
+        position: absolute;
+        right: 4px;
+        top: 0px;
+}
+.descBodyrow:hover .dropdowndesc {
+ visibility: visible;
+}
+.descBodyForAdd{
+    height: 85vh;
+    overflow: auto;
 }
