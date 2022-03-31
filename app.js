@@ -59,7 +59,7 @@ const SqlGeneratorClass = {
                                     <a class="dropdown-item dropFontSize" href="#">Blued</a>
                                     <a class="dropdown-item dropFontSize" href="#">Greened</a>
                                     <a class="dropdown-item dropFontSize" href="#">Whited</a>
-                                    <a class="dropdown-item dropFontSize" href="#">Delete</a>                                                                 
+                                    <a class="dropdown-item dropFontSize" onclick='SqlGeneratorClass.deleteThisRov(this)' href="#">Delete</a>                                                                 
                                 </div>
                             </div>      
                     
@@ -116,7 +116,7 @@ const SqlGeneratorClass = {
                                         <a class="dropdown-item dropFontSize" href="#">Add to Task </a>
                                         <a class="dropdown-item dropFontSize" href="#">Add to Task Events</a>
                                         <a class="dropdown-item dropFontSize" href="#">Copy/Move</a>
-                                        <a class="dropdown-item dropFontSize" href="#">Delete</a>
+                                        <a class="dropdown-item dropFontSize" onclick='SqlGeneratorClass.deleteDescRov(this)' href="#">Delete</a>
                                         <hr style="margin:3px 0px;">
                                         <a class="dropdown-item dropFontSize" href="#">Add Fields of Table as Input</a>
                                         <a class="dropdown-item dropFontSize" href="#">Add Input of Story Card As</a>                                     
@@ -150,7 +150,7 @@ const SqlGeneratorClass = {
                                     </div>
 
                                 <div class="descTitle_sira dFlex text-light">                        
-                                    <span class="title">1</span>
+                                    <span class="titleNomre">1</span>
                                 </div>
                                 <div class="descTitle_title dFlex">                             
                                     <div class="text-light title">${text}</div>
@@ -190,6 +190,12 @@ const SqlGeneratorClass = {
                                 <input class="bodyEndInp addInput d-none" placeholder="Title" type="text">
                             </div>
                         </div>`
+    },
+    deleteThisRov(e) {
+        $(e).closest('.descBodyrow').remove();
+    },
+    deleteDescRov(e) {
+        $(e).closest('.descCont').remove();
     }
 
 }
@@ -226,7 +232,6 @@ $(document).on('change', '.headAddNewInp', function () {
     $('.descBodyForAdd').sortable();
 
 });
-
 //ipsum menu ac
 $(document).on('click', '#ipsumCartmenuIcon', function() {
     $(this).toggleClass('ipsumMwnuIconactive ipsumMwnuIcon');
@@ -235,14 +240,37 @@ $(document).on('click', '#ipsumCartmenuIcon', function() {
 });
 // ipsum menu 
 $(document).on('click', '.ipsum_title_end_icons', function () {
+    $('#ipsumCartmenuIcon').click();
     $('#addIpsumInputt').toggleClass('d-none')
     $(this).find('i').toggleClass('fa-times fa-plus')
-    $('#ipsumCartmenuIcon').click();
+   
 })
 //ipsum ad desc
 $(document).on('change', '#addIpsumInputt', function () {
     var text = $(this).val();
     $('.ipsumConForAdd').prepend(SqlGeneratorClass.genDescForIpsum(text));
+})
+//desc CHILD dbl click
+$(document).on('dblclick', '.titlebodyText', function () {
+    el = $(this);
+    var text = el.text();
+    el.text('')
+    el.append(`<input id="" class="updateDescInp" value="${text}" type="text">`);
+})
+
+// DESC INP CHANGE
+$(document).on('change', '.updateDescInp', function () {
+    var text = $(this).val();
+    $(this).closest('div').append(text)
+    $(this).remove();
+})
+
+//desc dbl click
+$(document).on('dblclick', '.title', function () {
+    el = $(this);
+    var text = el.text();
+    el.text('')
+    el.append(`<input id="" class="updateDescInp" value="${text}" type="text">`);
 })
 
 $(document).on('click', '.btnMEnuAcanselectUcun', function(event) {
